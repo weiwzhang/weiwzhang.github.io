@@ -1,0 +1,34 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #234987;
+}
+
+.item {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.home-paragraph {
+	font-family: "Avenir Next";
+	font-size: 100;
+}
+
+p {
+	font-family: "Georgia";
+	font-size: 100;
+}
+
+h1 {
+	font-family: "Georgia", "Avenir Next"
+	font-size: 600;
+}
+
+.name {
+	font-family: cursive;
+}
