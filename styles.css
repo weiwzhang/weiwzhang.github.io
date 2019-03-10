@@ -1,34 +1,91 @@
-.container {
+p {
+	font-family: "Georgia";
+}
+
+h2 {
+	font-family: "Georgia", "Avenir Next";
+	margin-left: 10vw;
+}
+
+.column {
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.row {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #234987;
 }
 
 .item {
 	width: 100%;
-	display: flex;
 	justify-content: space-around;
 }
 
 .home-paragraph {
 	font-family: "Avenir Next";
-	font-size: 100;
+	font-size: 3vh;
 }
 
-p {
-	font-family: "Georgia";
-	font-size: 100;
+
+#home_title {
+	left: 25%;
+	right: 30%;
+	height: 10%;
+	font-size: 3.5vw;
+	text-align: center;
 }
 
-h1 {
-	font-family: "Georgia", "Avenir Next"
-	font-size: 600;
+/*.footer {
+	margin-left: 40%;
+	margin-right: 40%;
+}*/
+
+/* project tabs flipbox styling */
+.flip-box {
+  background-color: transparent;
+  width: 22vw;
+  height: 22vh;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-right: 0px;
+  display: inline-block;
 }
 
-.name {
-	font-family: cursive;
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+/*  background-color: #bbb;
+*/  color: black;
+}
+
+.flip-box-back {
+  background-color: #87ceeb;
+  color: white;
+  transform: rotateY(180deg);
 }

@@ -9,7 +9,12 @@
     <title>Weiwei Zhang's Website</title>
 
     <link href="./styles.css" rel="stylesheet">
-    <script async src="./js/cs.js"></script>
+    <style>
+        body {
+            background: url("./img/music_background.jpg");
+            background-size: 100%;
+        }
+    </style>
 </head>
 <body>
 	<nav>
@@ -17,15 +22,31 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="cs.html">Computer Science</a></li>
             <li><a href="music.html">Music</a></li>
-            <li><a href="contacts.html">Contact Me</a></li>
+            <li><a href="template.html">TBD</a></li>
         </ul>
     </nav>
 
-    <div>
-    	<div>
-    		<img src="./img/guzheng_keyboard.png" style="width: 500px">
-    	</div>
+    <div class="row" style="align-items: start;">
+        <div>
+            <div><h2>Projects</h2></div>
+            <div class="tabs" style="margin-left: 10vw; margin-right: 10vw; display: inline-block;">
+                <div class="flip-box" style="width:40vw;height:40vh">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/music/guzheng_keyboard.png" style="width:40vw;height:40vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%">
+                          <a href="https://github.com/weiwzhang/music_arena/tree/master/guzheng_keyboard">Guzheng Keyboard</a>
+                      </h3>
+                      <p style="width:40vw;height:40vh">
+                          a small digital instrument that allows you to use just a simple computer keyboard to try out different Guzheng (a Chinese traditional instrument) sounds
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>

@@ -9,7 +9,13 @@
     <title>Weiwei Zhang's Website</title>
 
     <link href="./styles.css" rel="stylesheet">
-    <script async src="./js/cs.js"></script>
+    <script src="./js/cs.js"></script>
+    <style>
+        body {
+            background: url("./img/cs_background.jpg");
+            background-size: 100%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,25 +23,135 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="cs.html">Computer Science</a></li>
             <li><a href="music.html">Music</a></li>
-            <li><a href="contacts.html">Contact Me</a></li>
+            <li><a href="template.html">TBD</a></li>
         </ul>
     </nav>
 
-    <div>
-        <h2>Projects</h2>
+    <div class="row" style="align-items: start;">
         <div>
-            
+            <div><h2>Projects</h2></div>
+            <div class="tabs" style="margin-left: 10vw; margin-right: 10vw; display: inline-block;">
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/cs_projects/pintos.png" style="width:22vw;height:22vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%">pintOS</h3>
+                      <p style="width:20vw;height:20vh">
+                          a simplified Linux OS, with file systems, user programs, and threading implemented.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/cs_projects/chatroom.png" style="width:22vw;height:22vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%"><a href="https://github.com/weiwzhang/chat_room">ChatRoom</a></h3>
+                      <p style="width:20vw;height:20vh">
+                          a chat server that connects multiple clients using non-blocking sockets and supports multi-channel messaging (Python)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/cs_projects/dbms.png" style="width:22vw;height:22vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%">simple DBMS</h3>
+                      <p style="width:20vw;height:20vh">
+                          a simplified database management system that implements B+ Tree, join algorithms, query optimizer, lock manager (Java)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/cs_projects/encryptedfilestore.png" style="width:22vw;height:22vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%">Encrypted File Storage</h3>
+                      <p style="width:20vw;height:20vh">
+                          encrypted file sharing and storage implemented with MAC, block ciphers, and RSA(Golang)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/cs_projects/potustweetanalysis.jpeg" style="width:22vw;height:22vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h3 style="margin-left: 8%">Presidential Tweet Analysis</h3>
+                      <p style="width:20vw;height:20vh">
+                          a data analysis project using Python pandas, matplotlib, numpy to analyze sentiment and tweeting behaviors from presidential tweets extracted by Twitter API
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="align-items: start;">
+        <div>
+            <div><h2>Professional</h2></div>
+            <div class="tabs" style="margin-left: 10vw; margin-right: 10vw; display: inline-block;">
+                <div class="flip-box" style="width: 10vw; height: 10vh">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/professional/shopkick.png" style="width:10vw;height:10vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h4 style="margin-left: 8%">Software Engineering Intern - Shopkick</h4>
+                      <p style="width:10vw;height:10vh">
+                          backend engineering
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box" style="width: 10vw; height: 10vh">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/professional/salesforce.png" style="width:10vw;height:10vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h4 style="margin-left: 8%">Software Engineering Intern - Salesforce</h4>
+                      <p style="width:10vw;height:10vh">
+                          backend engineering
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-box" style="width: 10vw; height: 10vh">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="./img/professional/apple.png" style="width:10vw;height:10vh">
+                    </div>
+                    <div class="flip-box-back">
+                      <h4 style="margin-left: 8%">Siri Software Engineer - Apple</h4>
+                      <p style="width:10vw;height:10vh">
+                          backend engineering, data engineering, ML
+                      </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        <h2>Professional</h2>
-        <div>
-            <img src="./img/shopkick.png" alt="Shopkick" style="width: 150px">
-            <img src="./img/salesforce.png" alt="Salesforce" style="width: 150px">
-            <img src="./img/apple.png" alt="Apple" style="width: 150px">
-        </div>
-    </div>
 
 </body>
 </html>
